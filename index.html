@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131: Dynamic Web Fundamentals - Catalina Moreno</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - Catalina Moreno</h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/catalinainesmoreno/" target="_blank">LinkedIn Profile</a></li>
+                <li><a href="https://byui.instructure.com/" target="_blank">I-Learn</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7"
+                        target="_blank">Favorite Scripture</a></li>
+                <li><a href="#" target="_blank">Final Project Folder</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="grid-container">
+            <div class="about-topics">
+                <section class="card">
+                    <h2>About Me</h2>
+                    <div class="about-me-content">
+                        <img src="images/catalina.jpeg" alt="Catalina" class="about-image">
+                        <p>My name is Catalina, I am 21 years old and I live in Buenos Aires, Argentina. I love taking
+                            photos, designing, and spending quality time with my family and my boyfriend. In my free
+                            time, I enjoy exploring new places and capturing beautiful moments through my camera. I want
+                            to incorporate web development skills into my graphic designs and enhance my work in social
+                            media marketing.</p>
+                    </div>
+                </section>
+
+                <section class="card">
+                    <h2>Argentina - Buenos Aires</h2>
+                    <div class="about-me-content">
+                        <img src="images/argentina.png" alt="Argentina" class="about-image">
+                        <p>Did you know that Buenos Aires is home to the famous tango? This iconic dance originated in
+                            the late 19th century in the city's working-class neighborhoods and has since become a
+                            symbol of Argentine culture. Tango showcases a passionate connection between partners,
+                            making it not only a dance but also an art form celebrated worldwide.</p>
+                    </div>
+                </section>
+            </div>
+
+            <div class="resources">
+                <h2>Resources</h2>
+                <ul>
+                    <li><a href="https://www.w3schools.com/html/" target="_blank">W3Schools HTML Tutorial</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN Web Docs -
+                            HTML</a></li>
+                    <li><a href="https://html.com/" target="_blank">HTML.com - Learn HTML</a></li>
+                    <li><a href="https://css-tricks.com/" target="_blank">CSS-Tricks</a></li>
+                    <li><a href="https://javascript.info/" target="_blank">JavaScript Info</a></li>
+                    <li><a href="https://responsive.design/" target="_blank">Responsive Web Design</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Catalina Moreno, Argentina</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        document.getElementById("currentyear").textContent = new Date().getFullYear();
+        document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
+    </script>
+</body>
+
+</html>

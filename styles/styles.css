@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header h1 {
+    grid-area: header;
+    background-color: #2A4C59;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-family: "Trirong", serif;
+}
+
+main {
+    grid-area: main;
+    padding: 1rem;
+    background-color: #fff;
+    width: 100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    gap: 20px;
+    width: 100%;
+}
+
+.about-topics {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-me-content {
+    display: flex;
+    align-items: flex-start;
+}
+
+.about-image {
+    width: 150px;
+    height: auto;
+    margin-left: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 15px;
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background-color: #8C162C;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    transform: scale(1.05);
+    border-radius: 5px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #8C162C;
+    color: white;
+    text-align: center;
+}
+
+main p {
+    color: #592A19;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.resources {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    width: 100%;
+}
+
+.resources ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card h2 {
+    color: #8C503A;
+}
