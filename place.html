@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel to Argentina</title>
+    <link rel="stylesheet" href="styles/place.css">
+</head>
+
+<body>
+    <header>
+        <section class="welcome-section">
+            <h1>Welcome to Argentina!</h1>
+        </section>
+    </header>
+
+    <section class="hero">
+        <picture>
+            <source srcset="images/buenos aires.jpeg" media="(min-width: 800px)">
+            <source srcset="images/buenos aires.jpeg" media="(min-width: 600px)">
+            <img src="images/buenos aires.jpeg" alt="Landscape of Argentina" loading="lazy">
+        </picture>
+
+        <div class="info-container">
+
+            <div class="about">
+                <h2>Data</h2>
+                <ul>
+                    <li><strong>Area:</strong> 2,780,400 sq km</li>
+                    <li><strong>Population:</strong> 45,376,763</li>
+                    <li><strong>Capital:</strong> Buenos Aires</li>
+                    <li><strong>Languages:</strong> Spanish</li>
+                    <li><strong>Currency:</strong> Argentine Peso</li>
+                    <li><strong>Time Zone:</strong> UTC-3</li>
+                    <li><strong>Calling Code:</strong> +54</li>
+                    <li><strong>Internet TLD:</strong> .ar</li>
+                </ul>
+            </div>
+
+            <div class="weather">
+                <h2>
+                    Weather
+                    <img src="images/sun.png" alt="Sun Icon" class="weather-icon">
+                </h2>
+                <p><strong>Temperature:</strong> <span id="temp">10°C</span></p>
+                <p><strong>Conditions:</strong> Partly Cloudy</p>
+                <p><strong>Wind:</strong> 15 km/h</p>
+                <p><strong>Wind Chill:</strong> <span id="windChill">8°C</span></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span> - Catalina Moreno / Argentina | Last modified: <span id="lastModified"></span>
+        </p>
+    </footer>
+
+    <script src="scripts/place.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+:root {
+    --primary-color: #17a6ff; 
+    --secondary-color: #ffffff; 
+    --accent-color: #f0f0f0;
+    --font-family: 'Georgia', serif;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--primary-color);
+    background-color: var(--accent-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 2em;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.info-container {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    right: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about, .weather {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.about {
+    height: auto; /* Ajusta la altura automáticamente para eliminar el espacio vacío */
+}
+
+.about h2, .weather h2 {
+    background-color: var(--primary-color);
+    color: var(--secondary-color); 
+    padding: 10px; 
+    border-radius: 8px;
+}
+
+.weather-icon {
+    width: 20px; /* Tamaño pequeño del icono */
+    height: auto; /* Mantener proporción del icono */
+    vertical-align: middle; /* Alinear verticalmente con el texto */
+    margin-left: 10px; /* Espacio entre el texto "Weather" y el icono */
+}
+
+.weather h2 img {
+    width: 30px;
+    height: 30px;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 600px) {
+    .info-container {
+        flex-direction: column;
+        top: 10%;
+    }
+
+    .about, .weather {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero img {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .info-container {
+        position: static; 
+        width: 100%;
+        margin-top: 20px; 
+    }
+
+    .about, .weather {
+        width: 100%; 
+        margin: 10px 0;
+
+    }
+}
