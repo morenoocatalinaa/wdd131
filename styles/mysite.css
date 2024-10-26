@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #B5B4D9;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+header .logo img {
+    width: 50px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+
+#welcome {
+    background-color: #D8E3F2;
+    color: gray;
+    text-align: center;
+    padding: 3rem;
+}
+
+#welcome h1 {
+    font-family: 'Georgia', serif;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#welcome p {
+    font-size: 1.5rem;
+}
+
+.section1 {
+    background-color: #F2EBC4; 
+}
+
+.section2 {
+    background-color: #E4BEBD;
+}
+
+.section3 {
+    background-color: #B9BF8A; 
+}
+
+.content-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    margin: 1rem 0;
+}
+
+.content-section img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+.content-section article {
+    width: 50%;
+    padding: 1rem;
+}
+
+.content-section h2 {
+    font-family: 'Georgia', serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #515074;
+    padding: 1rem;
+}
+
+.content-section p {
+    font-size: 1.2rem;
+    color: #515074;
+}
+
+
+footer {
+    background-color: #B5B4D9;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+@media (max-width: 768px) {
+    .content-section {
+        flex-direction: column; 
+        padding: 1rem;
+    }
+
+    .content-section img, .content-section article {
+        width: 100%;
+    }
+
+    .content-section img {
+        margin-top: 1rem; 
+    }
+
+    header nav ul {
+        display: none; 
+    }
+
+    .menu-toggle {
+        display: block;
+        background: none;
+        
+        border: none;
+        font-size: 2rem;
+        color: white;
+    }
+
+    nav ul.show {
+        display: flex; 
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: #B5B4D9;
+        padding: 1rem;
+        border-radius: 8px;
+    }
+
+    nav ul.show li {
+        margin: 0.5rem 0;
+    }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moments by Catalina</title>
+    <link rel="stylesheet" type="text/css" href="styles/contact.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="images/Logo.png" alt="Moments by Catalina Logo">
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="mysite.html">Home</a></li>
+                <li><a href="portafolio.html">Portfolio</a></li>
+
+            </ul>
+            <button class="menu-toggle">☰</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact" class="contact-section">
+            <h1>Contact Me</h1>
+            <p>Have questions or want to book a session? Fill out the form below or reach out through my contact
+                details.</p>
+
+            <form action="submit_contact.php" method="post" class="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+
+            <div class="contact-info">
+                <p><strong>Email:</strong> contact@momentsbycatalina.com</p>
+                <p><strong>Phone:</strong> +123 456 7890</p>
+                <p><strong>Location:</strong> Buenos Aires, Argentina</p>
+            </div>
+
+            <div class="contact-image">
+                <img src="images/contact.jpeg" alt="Contact Moments by Catalina">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Moments by Catalina</p>
+    </footer>
+
+    <script src="scripts/contact.js"></script>
+</body>
+
+</html>

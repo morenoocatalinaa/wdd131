@@ -1,0 +1,179 @@
+body {
+    font-family: 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #B5B4D9;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-family: 'Georgia', serif;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 40px;
+    font-size: 2em;
+    font-family: 'Georgia', serif;
+    color: #B9BF8A;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border: 2px solid #ddd;
+}
+
+footer {
+    background-color: #B5B4D9;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+@media (max-width: 768px) {
+
+    .gallery {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .gallery img {
+        width: 80%; 
+        height: auto;
+        margin-bottom: 10px; 
+    }
+
+
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 2rem;
+        color: white;
+        cursor: pointer;
+    }
+
+
+    header nav ul {
+        display: none;
+    }
+
+
+    nav ul.show {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: #B5B4D9;
+        padding: 1rem;
+        border-radius: 8px;
+    }
+
+    nav ul.show li {
+        margin: 0.5rem 0;
+    }
+}
+
+
+header {
+    background-color: #B5B4D9;
+    color: white;
+    padding: 10px 20px;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between; 
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FFF;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex; 
+    gap: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-toggle {
+    display: none; 
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; 
+        background: none;
+        border: none;
+        font-size: 2rem;
+        color: white;
+        cursor: pointer;
+    }
+
+    nav ul {
+        display: none; 
+    }
+
+    nav ul.show {
+        display: flex; 
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: #B5B4D9;
+        padding: 1rem;
+        border-radius: 8px;
+        gap: 10px;
+    }
+}
+
+header .logo img {
+    width: 50px;
+}
